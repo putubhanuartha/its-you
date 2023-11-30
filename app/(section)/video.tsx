@@ -36,7 +36,7 @@ const VideoSection = () => {
 								loop
 								controls
 							>
-								<source src="/video/interaksi.mp4" />
+								<source src="https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/interaksi.mp4?alt=media&token=d8f1fbab-e799-402f-b3e0-753d66c31a98" />
 							</motion.video>
 						)}
 
@@ -51,6 +51,7 @@ const VideoSection = () => {
 									priority
 									fill
 									src={"/image/celaket1.jpg"}
+									sizes="100vw"
 									alt="celaket"
 									style={{ objectFit: "cover" }}
 								/>

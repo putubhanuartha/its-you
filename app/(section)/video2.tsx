@@ -14,7 +14,7 @@ const VideoSepatuSection = () => {
 					controls
 					className="h-[70vh] rounded-lg object-cover bg-cover"
 				>
-					<source src="/video/sepatu.mp4" />
+					<source src="https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/sepatu.mp4?alt=media&token=d67d5603-1f23-4a2e-82a7-6129ce754f1c" />
 				</video>
 				<div>
 					<h2 className="text-6xl">Akankah kita bersama?</h2>
