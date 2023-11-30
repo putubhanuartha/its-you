@@ -15,7 +15,9 @@ const HeroSection = () => {
 			<div className="relative min-h-screen">
 				<Image
 					fill
-					src={"/hero.jpg"}
+					src={
+						"https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/hero.jpg?alt=media&token=eeb6e8e6-f85d-4ed1-bcde-95dc317ff6eb"
+					}
 					sizes="(min-width: 808px) 50vw, 100vw"
 					style={{ objectFit: "cover" }}
 					alt="hero image"

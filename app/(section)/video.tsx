@@ -50,7 +50,7 @@ const VideoSection = () => {
 								<Image
 									priority
 									fill
-									src={"/image/celaket1.jpg"}
+									src={"https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/celaket1.jpg?alt=media&token=5fb53277-0fac-4b48-a80f-a83a0b3b6cfe"}
 									sizes="100vw"
 									alt="celaket"
 									style={{ objectFit: "cover" }}

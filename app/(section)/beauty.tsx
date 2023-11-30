@@ -80,7 +80,7 @@ const BeautySection = () => {
 					sizes="(min-width: 808px) 50vw, 100vw"
 					fill
 					alt="tree"
-					src={"/image/tree.png"}
+					src={"https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/tree.png?alt=media&token=f1f6ec53-98f2-4100-8e4a-5150106db171"}
 					style={{ objectFit: "contain" }}
 				/>
 			</button>
