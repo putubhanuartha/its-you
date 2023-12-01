@@ -27,7 +27,7 @@ const VideoSepatuSection = () => {
 								initial={{ opacity: 0, x: -200 }}
 								animate={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.6, ease: "backOut", delay: 0.4 }}
-								className="text-5xl md:text-6xl"
+								className="text-4xl md:text-5xl"
 							>
 								Akankah kita bersama?
 							</motion.h2>
@@ -35,7 +35,7 @@ const VideoSepatuSection = () => {
 								initial={{ opacity: 0, x: 200 }}
 								animate={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.6, ease: "backOut", delay: 1.1 }}
-								className="text-2xl md:text-3xl"
+								className="text-xl md:text-2xl"
 							>
 								Seperti sepasang sepatu?
 							</motion.h2>

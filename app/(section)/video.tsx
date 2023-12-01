@@ -9,7 +9,7 @@ const VideoSection = () => {
 		<section
 			ref={ref}
 			id="videosection"
-			className="h-screen flex py-9 px-6"
+			className="h-screen flex py-9 px-6 bg-slate-100"
 		>
 			<div className="m-auto max-w-8xl w-full flex justify-between items-center gap-x-2">
 				<div className="hidden lg:block">
@@ -67,7 +67,7 @@ const VideoSection = () => {
 							transition={{ duration: 1, ease: "backOut", delay: 1.1 }}
 							className="mt-2"
 						>
-							<div className="block lg:hidden my-9">
+							<div className="block lg:hidden my-4">
 								{isInView && (
 									<motion.p
 										initial={{ opacity: 0, y: -100 }}
@@ -89,10 +89,10 @@ const VideoSection = () => {
 									</motion.p>
 								)}
 							</div>
-							<h2 className="text-2xl md:text-3xl md:text-start text-center">
+							<h2 className="text-xl md:text-2xl md:text-start text-center">
 								You&apos;re not a drop in the ocean
 							</h2>
-							<h2 className=" text-5xl md:text-6xl mt-4 md:text-start text-center">
+							<h2 className="text-4xl md:text-5xl mt-4 md:text-start text-center">
 								You are the ocean in a drop
 							</h2>
 							<button className="bg-green-700 md:mx-0 mx-auto block mt-5 text-white px-2 py-1.5 rounded-md">
