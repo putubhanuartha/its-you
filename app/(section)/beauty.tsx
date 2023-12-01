@@ -3,12 +3,19 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 const BeautySection = () => {
 	const [index, setIndex] = useState(0);
+	function handleSubmitForm() {
+		const email = "putuaryabhanu03@gmail.com";
+		const message = `Dear, Itzaaa\n\nBerawal dari rasa mengagumi, suka, hingga jatuh cinta\nJatuh aku ke dalam cinta sedalam-dalamnya\nHingga aku tidak mampu terjatuh lagi\nWill you be girlfriend?\n\n<<answer here>> \n\n Who fell in love with you, Putu Ayra`;
+		const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+			"Will you be my girlfriend?"
+		)}&body=${encodeURIComponent(message as string)}`;
+		window.location.href = mailtoLink;
+	}
 	useEffect(() => {
-		if (index === 5) {
-			const answer = prompt("Will you be my girlfriend?");
-			console.log(answer);
+		if (index === 6) {
+			handleSubmitForm();
 		}
-		if (index > 5) {
+		if (index > 6) {
 			setIndex(0);
 		}
 	}, [index]);
@@ -26,43 +33,52 @@ const BeautySection = () => {
 					<motion.h1
 						initial={{ opacity: 0, y: 100 }}
 						animate={{ opacity: 1, y: 0 }}
-						className="text-center text-5xl text-white"
+						className="text-center text-4xl md:text-5xl text-white"
 					>
-						Getaran rasa itu selalu bergejolak
+						Getaran rasaku selalu bergejolak
 					</motion.h1>
 				)}
 				{index === 1 && (
 					<motion.h1
 						initial={{ opacity: 0, y: 100 }}
 						animate={{ opacity: 1, y: 0 }}
-						className="text-center text-5xl text-white"
+						className="text-center text-4xl md:text-5xl text-white"
 					>
-						Kamu yang selalu ada memenuhi relung hati
+						Hanya kamu yang mampu membuatku seperti itu
 					</motion.h1>
 				)}
 				{index === 2 && (
 					<motion.h1
 						initial={{ opacity: 0, y: 100 }}
 						animate={{ opacity: 1, y: 0 }}
-						className="text-center text-5xl text-white"
+						className="text-center  text-4xl md:text-5xl text-white"
 					>
-						Tak ada momen terlupakan denganmu
+						Kamu yang selalu ada memenuhi relung hati
 					</motion.h1>
 				)}
 				{index === 3 && (
 					<motion.h1
 						initial={{ opacity: 0, y: 100 }}
 						animate={{ opacity: 1, y: 0 }}
-						className="text-center text-5xl text-white"
+						className="text-center  text-4xl md:text-5xl text-white"
 					>
-						Rasa nyaman yang tumbuh perlahan
+						Tak ada momen terlupakan denganmu
 					</motion.h1>
 				)}
 				{index === 4 && (
 					<motion.h1
 						initial={{ opacity: 0, y: 100 }}
 						animate={{ opacity: 1, y: 0 }}
-						className="text-center text-5xl text-white"
+						className="text-center  text-4xl md:text-5xl text-white"
+					>
+						Rasa nyaman yang tumbuh perlahan
+					</motion.h1>
+				)}
+				{index === 5 && (
+					<motion.h1
+						initial={{ opacity: 0, y: 100 }}
+						animate={{ opacity: 1, y: 0 }}
+						className="text-center  text-4xl md:text-5xl text-white"
 					>
 						Jatuh suka yang menjadi jatuh cinta ❤️
 					</motion.h1>
@@ -80,7 +96,7 @@ const BeautySection = () => {
 					sizes="(min-width: 808px) 50vw, 100vw"
 					fill
 					alt="tree"
-					src={"https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/tree.png?alt=media&token=f1f6ec53-98f2-4100-8e4a-5150106db171"}
+					src={process.env.NEXT_PUBLIC_TREE_IMAGE as string}
 					style={{ objectFit: "contain" }}
 				/>
 			</button>

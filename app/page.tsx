@@ -6,6 +6,7 @@ import VideoSection from "./(section)/video";
 import BeautySection from "./(section)/beauty";
 import VideoSepatuSection from "./(section)/video2";
 import Footer from "./(section)/footer";
+import { useRouter } from "next/router";
 
 export default function Home() {
 	return (

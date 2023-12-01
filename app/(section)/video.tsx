@@ -11,7 +11,7 @@ const VideoSection = () => {
 			id="videosection"
 			className="h-screen flex py-9 px-6"
 		>
-			<div className="m-auto max-w-7xl w-full flex justify-between items-center ">
+			<div className="m-auto max-w-8xl w-full flex justify-between items-center gap-x-2">
 				<div className="hidden lg:block">
 					{isInView && (
 						<motion.p
@@ -24,19 +24,21 @@ const VideoSection = () => {
 						</motion.p>
 					)}
 				</div>
-				<div className="w-fit overflow-clip relative">
-					<div className="flex gap-x-5 h-[28rem]">
+				<div className="w-fit mx-auto overflow-clip relative">
+					<div className="flex gap-x-5 h-[28rem] flex-col gap-y-5 md:gap-y-0 md:flex-row">
 						{isInView && (
 							<motion.video
 								initial={{ opacity: 0, y: -200, x: -300, rotate: -45 }}
 								animate={{ opacity: 1, y: 0, x: 0, rotate: 0 }}
 								transition={{ duration: 1, ease: "backOut", delay: 0 }}
-								className="rounded-lg bg-cover object-cover w-[10vw] flex-1"
+								className="rounded-lg bg-cover object-cover w-full md:h-auto h-1/2 flex-1"
 								autoPlay
 								loop
 								controls
 							>
-								<source src="https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/interaksi.mp4?alt=media&token=d8f1fbab-e799-402f-b3e0-753d66c31a98" />
+								<source
+									src={process.env.NEXT_PUBLIC_INTERAKSI_VIDEO as string}
+								/>
 							</motion.video>
 						)}
 
@@ -50,7 +52,7 @@ const VideoSection = () => {
 								<Image
 									priority
 									fill
-									src={"https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/celaket1.jpg?alt=media&token=5fb53277-0fac-4b48-a80f-a83a0b3b6cfe"}
+									src={process.env.NEXT_PUBLIC_CELAKET_IMAGE as string}
 									sizes="100vw"
 									alt="celaket"
 									style={{ objectFit: "cover" }}
@@ -87,9 +89,13 @@ const VideoSection = () => {
 									</motion.p>
 								)}
 							</div>
-							<h2 className="text-5xl">You&apos;re not a drop in the ocean</h2>
-							<h2 className="text-xl">You are the ocean in a drop</h2>
-							<button className="bg-green-700 mt-2 text-white px-2 py-1.5 rounded-md">
+							<h2 className="text-2xl md:text-3xl md:text-start text-center">
+								You&apos;re not a drop in the ocean
+							</h2>
+							<h2 className=" text-5xl md:text-6xl mt-4 md:text-start text-center">
+								You are the ocean in a drop
+							</h2>
+							<button className="bg-green-700 md:mx-0 mx-auto block mt-5 text-white px-2 py-1.5 rounded-md">
 								<a href="#sepatu">Click me</a>
 							</button>
 						</motion.div>

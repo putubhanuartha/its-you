@@ -1,10 +1,14 @@
-import React from "react";
+import { useInView, motion } from "framer-motion";
+import React, { useRef } from "react";
 
 const VideoSepatuSection = () => {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: false, amount: 0.7 });
 	return (
 		<section
+			ref={ref}
 			id="sepatu"
-			className="flex h-screen py-10 mt-20 px-10"
+			className="flex h-screen py-10  px-10"
 		>
 			<div className="m-auto">
 				<video
@@ -12,16 +16,39 @@ const VideoSepatuSection = () => {
 					loop
 					muted
 					controls
-					className="h-[70vh] rounded-lg object-cover bg-cover"
+					className="h-[60vh] rounded-lg object-cover bg-cover"
 				>
-					<source src="https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/sepatu.mp4?alt=media&token=d67d5603-1f23-4a2e-82a7-6129ce754f1c" />
+					<source src={process.env.NEXT_PUBLIC_SEPATU_VIDEO as string} />
 				</video>
-				<div>
-					<h2 className="text-6xl">Akankah kita bersama?</h2>
-					<h2 className="text-3xl">Seperti sepasang sepatu?</h2>
-					<button className="bg-green-700 mt-2 text-white px-2 py-1.5 rounded-md">
-						<a href="#tree">Click me</a>
-					</button>
+				<div className="mt-4">
+					{isInView && (
+						<>
+							<motion.h2
+								initial={{ opacity: 0, x: -200 }}
+								animate={{ opacity: 1, x: 0 }}
+								transition={{ duration: 0.6, ease: "backOut", delay: 0.4 }}
+								className="text-5xl md:text-6xl"
+							>
+								Akankah kita bersama?
+							</motion.h2>
+							<motion.h2
+								initial={{ opacity: 0, x: 200 }}
+								animate={{ opacity: 1, x: 0 }}
+								transition={{ duration: 0.6, ease: "backOut", delay: 1.1 }}
+								className="text-2xl md:text-3xl"
+							>
+								Seperti sepasang sepatu?
+							</motion.h2>
+							<motion.button
+								initial={{ opacity: 0, y: 200 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.6, ease: "backOut", delay: 1.7 }}
+								className="bg-green-700 mt-2 text-white px-2 py-1.5 rounded-md"
+							>
+								<a href="#tree">Click me</a>
+							</motion.button>
+						</>
+					)}
 				</div>
 			</div>
 		</section>

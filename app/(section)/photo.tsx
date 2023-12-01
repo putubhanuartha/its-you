@@ -26,8 +26,8 @@ const PhotoSection = () => {
 							sizes="(min-width: 808px) 50vw, 100vw"
 							fill
 							style={{ objectFit: "cover" }}
-							src={"https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/pink2.jpg?alt=media&token=7c684529-5996-4ea7-b832-d41e1b3ca3d5"}
-							alt={"pink1"}
+							src={process.env.NEXT_PUBLIC_PINK2_IMAGE as string}
+							alt={"pink2"}
 						/>
 					</motion.div>
 				)}
@@ -76,7 +76,7 @@ const PhotoSection = () => {
 							sizes="(min-width: 808px) 50vw, 100vw"
 							fill
 							style={{ objectFit: "cover" }}
-							src={"https://firebasestorage.googleapis.com/v0/b/papb-fb-fd69f.appspot.com/o/pink1.jpg?alt=media&token=589b2ece-5e49-4da7-87a5-6b1d7d2d8d3c"}
+							src={process.env.NEXT_PUBLIC_PINK1_IMAGE as string}
 							alt={"pink1"}
 						/>
 					</motion.div>
