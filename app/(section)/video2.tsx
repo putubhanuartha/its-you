@@ -29,7 +29,7 @@ const VideoSepatuSection = () => {
 								transition={{ duration: 0.6, ease: "backOut", delay: 0.4 }}
 								className="text-4xl md:text-5xl"
 							>
-								Akankah kita bersama?
+								Will we be together?
 							</motion.h2>
 							<motion.h2
 								initial={{ opacity: 0, x: 200 }}
@@ -37,7 +37,7 @@ const VideoSepatuSection = () => {
 								transition={{ duration: 0.6, ease: "backOut", delay: 1.1 }}
 								className="text-xl md:text-2xl"
 							>
-								Seperti sepasang sepatu?
+								Like a pair of shoes?
 							</motion.h2>
 							<motion.button
 								initial={{ opacity: 0, y: 200 }}

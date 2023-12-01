@@ -35,7 +35,7 @@ const BeautySection = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="text-center text-4xl md:text-5xl text-white"
 					>
-						Getaran rasaku selalu bergejolak
+						My feelings are always fluctuating
 					</motion.h1>
 				)}
 				{index === 1 && (
@@ -44,7 +44,7 @@ const BeautySection = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="text-center text-4xl md:text-5xl text-white"
 					>
-						Hanya kamu yang mampu membuatku seperti itu
+						Only you can make me like that
 					</motion.h1>
 				)}
 				{index === 2 && (
@@ -53,7 +53,7 @@ const BeautySection = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="text-center  text-4xl md:text-5xl text-white"
 					>
-						Kamu yang selalu ada memenuhi relung hati
+						Always a special moment with you
 					</motion.h1>
 				)}
 				{index === 3 && (
@@ -62,7 +62,7 @@ const BeautySection = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="text-center  text-4xl md:text-5xl text-white"
 					>
-						Tak ada momen terlupakan denganmu
+						You are always in my heart
 					</motion.h1>
 				)}
 				{index === 4 && (
@@ -71,7 +71,7 @@ const BeautySection = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="text-center  text-4xl md:text-5xl text-white"
 					>
-						Rasa nyaman yang tumbuh perlahan
+						A sense of comfort that grows slowly
 					</motion.h1>
 				)}
 				{index === 5 && (
@@ -80,7 +80,7 @@ const BeautySection = () => {
 						animate={{ opacity: 1, y: 0 }}
 						className="text-center  text-4xl md:text-5xl text-white"
 					>
-						Jatuh suka yang menjadi jatuh cinta ❤️
+						I&apos;m falling in love with you ❤️
 					</motion.h1>
 				)}
 			</div>

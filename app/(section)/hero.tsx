@@ -41,7 +41,7 @@ const HeroSection = () => {
 							transition={{ duration: 0.3, ease: "backOut", delay: 0.4 }}
 							className="text-center text-3xl md:text-4xl"
 						>
-							10
+							That
 						</motion.p>
 						<motion.p
 							initial={{ opacity: 0, translateY: 100 }}
@@ -50,7 +50,7 @@ const HeroSection = () => {
 							className="text-center text-5xl md:text-6xl"
 						>
 							{" "}
-							September
+							Special
 						</motion.p>
 						<motion.p
 							initial={{ opacity: 0, translateY: 100 }}
@@ -58,7 +58,7 @@ const HeroSection = () => {
 							transition={{ duration: 0.3, ease: "backOut", delay: 1.2 }}
 							className="text-center text-3xl md:text-4xl"
 						>
-							2002
+							Woman
 						</motion.p>
 					</div>
 				)}

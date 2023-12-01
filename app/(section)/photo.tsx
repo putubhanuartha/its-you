@@ -44,7 +44,7 @@ const PhotoSection = () => {
 								Lawrencium [Lr]
 							</h2>
 							<p className="text-center text-xl md:text-2xl lg:text-3xl">
-								You have such a complex magnetic vibe
+								She has such a complex magnetic vibe
 							</p>
 							<p className="text-center text-lg md:text-xl">
 								Like a magical pull with silver linings

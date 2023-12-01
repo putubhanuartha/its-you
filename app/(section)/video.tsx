@@ -20,7 +20,7 @@ const VideoSection = () => {
 							transition={{ duration: 1, ease: "backOut", delay: 1.1 }}
 							className="text-center text-2xl flex-1"
 						>
-							Ingin Bawamu
+							Want to take you
 						</motion.p>
 					)}
 				</div>
@@ -75,7 +75,7 @@ const VideoSection = () => {
 										transition={{ duration: 1, ease: "backOut", delay: 1.1 }}
 										className="text-center text-2xl flex-1"
 									>
-										Ingin Bawamu
+										Want to take you
 									</motion.p>
 								)}
 								{isInView && (
@@ -85,7 +85,7 @@ const VideoSection = () => {
 										transition={{ duration: 1, ease: "backOut", delay: 1.3 }}
 										className="text-center text-2xl flex-1"
 									>
-										Ke tempat indah
+										To a beautiful place
 									</motion.p>
 								)}
 							</div>
@@ -109,7 +109,7 @@ const VideoSection = () => {
 							transition={{ duration: 1, ease: "backOut", delay: 1.3 }}
 							className="text-center text-2xl flex-1"
 						>
-							Ke tempat indah
+							To a beautiful place
 						</motion.p>
 					)}
 				</div>
